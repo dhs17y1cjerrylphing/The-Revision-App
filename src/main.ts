@@ -9,7 +9,7 @@ import axios from "axios";
 
 Vue.config.productionTip = false;
 
-axios.defaults.baseURL = "http://127.0.0.1:5000/anki";
+axios.defaults.baseURL = "https://d3d1-116-88-43-95.ap.ngrok.io/anki";
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
 Vue.use(DatetimePicker, axios);
