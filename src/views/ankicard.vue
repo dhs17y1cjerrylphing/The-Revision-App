@@ -51,7 +51,9 @@ export default Vue.extend({
   name: "anki-card",
   data() {
     return {
-      card : {},
+      deckid : '',
+      deckname : '',
+      card : {question:'',answer:'',familiarity:0,},
       reveal: false
       
     };
@@ -74,7 +76,7 @@ export default Vue.extend({
         this.card = resp.data;
       });
     },
-    setFamilarity(familiarity:Number){
+    setFamilarity(familiarity:number){
       this.card.familiarity = familiarity;
       axios.post("/decks/"+ this.deckid,this.card).then(resp=>{
         this.reveal =  false;
