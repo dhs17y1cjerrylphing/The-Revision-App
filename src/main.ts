@@ -9,7 +9,7 @@ import axios from "axios";
 
 Vue.config.productionTip = false;
 
-axios.defaults.baseURL = "https://563b-116-88-43-95.ap.ngrok.io//anki";
+axios.defaults.baseURL = "https://6173-116-88-43-95.ap.ngrok.io//anki";
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
 Vue.use(DatetimePicker, axios);
